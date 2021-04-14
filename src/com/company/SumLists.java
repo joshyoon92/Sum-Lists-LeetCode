@@ -16,7 +16,7 @@ public class SumLists {
         }
         result.data = value%10;
         if (l1 != null || l2 != null) {
-            LinkedList more = addLists(l1 ==null ? null : l1.next(), l2 == null ? null : l2.next, value >= 10 ? 1:0);
+            LinkedList more = sumLists(l1 ==null ? null : l1.next(), l2 == null ? null : l2.next, value >= 10 ? 1:0);
             result.setNext(more);
         }
         return result;
